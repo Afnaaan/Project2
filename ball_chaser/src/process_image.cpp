@@ -36,9 +36,9 @@ void process_image_callback(const sensor_msgs::Image img)
         if(img.data[i] == white_pixel)
             {
                 x = i % img_step + 1;
-                if(x < 0.25 * img_step) 
+                if(x < 0.3 * img_step) 
                     drive_robot(0.5,-1.0);
-                else if(x > 0.75 * img_step)   
+                else if(x > 0.7 * img_step)   
                     drive_robot(0.5,1.0);
                 else
                     drive_robot(0.5,0.0);
