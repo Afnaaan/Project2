@@ -31,9 +31,9 @@ void process_image_callback(const sensor_msgs::Image img)
     // TODO: Loop through each pixel in the image and check if there's a bright white one
     // Then, identify if this pixel falls in the left, mid, or right side of the image
     // Depending on the white ball position, call the drive_bot function and pass velocities to it
-    for (int i = 0; i < data_size; i++)
+    for (int i = 0; i < data_size; i+=3)
     {
-        if(img.data[i] == white_pixel)
+        if(img.data[i] == white_pixel && img.data[i+1] == white_pixel && img.data[i+2] == white_pixel)
             {
                 x = i % img_step + 1;
                 if(x < 0.3 * img_step) 
