@@ -26,6 +26,24 @@
     </plugin>
   </gazebo>
 
+  <!--chassis_link-->
+  <gazebo reference="chassis">
+    <material>Gazebo/Blue</material>
+  </gazebo>
+
+  <!--wheels-->
+  <gazebo reference="right_wheel">
+    <material>Gazebo/Green</material>
+  </gazebo>
+  <gazebo reference="left_wheel">
+    <material>Gazebo/Green</material>
+  </gazebo>
+  
+  <!--camera_link-->
+  <gazebo reference="camera">
+    <material>Gazebo/Red</material>
+  </gazebo>
+
   <!-- camera -->
   <gazebo reference="camera">
     <sensor type="camera" name="camera1">
