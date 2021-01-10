@@ -28,7 +28,7 @@
 
   <!--chassis_link-->
   <gazebo reference="chassis">
-    <material>Gazebo/Blue</material>
+    <material>Gazebo/Red</material>
   </gazebo>
 
   <!--wheels-->
@@ -41,7 +41,7 @@
   
   <!--camera_link-->
   <gazebo reference="camera">
-    <material>Gazebo/Red</material>
+    <material>Gazebo/Blue</material>
   </gazebo>
 
   <!-- camera -->
